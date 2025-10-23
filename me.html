@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hi its Chanakya</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/config.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Helper class for the dropshadow background in the front display box -->
+  <style>
+    /* Orange frame with subtle glow */
+    .frame {
+      position: relative;
+      border-radius: 28px;
+      background: radial-gradient(900px 220px at 100% 0, rgba(249, 115, 22, .35), transparent 60%) border-box;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, .06) inset, 0 20px 60px -20px rgba(249, 115, 22, .35);
+    }
+
+    .vertical-rl {
+      writing-mode: vertical-rl;
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-950 text-neutral-200 font-sans antialiased selection:bg-orange-500 selection:text-black">
+  <!-- ===== NAVIGATION PORTION ===== -->
+  <header class="sticky top-0 z-40 border-white/5 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/0">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#home" class="text-lg font-extrabold tracking-tight">
+        <span class="text-neutral-300">Hi</span><span class="text-orange-500">Chanakya</span>
+      </a>
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-8 text-sm">
+          <li><a class="hover:text-white" href="#home">Home</a></li>
+          <li><a class="hover:text-white" href="#about">About</a></li>
+          <li><a class="hover:text-white" href="#skills">Skills</a></li>
+          <li><a class="hover:text-white" href="#publications">Publications</a></li>
+          <li><a class="hover:text-white" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="menuBtn"
+        class="md:hidden inline-flex items-center gap-2 px-3 py-2 rounded-xl border border-white/10 hover:border-white/20">
+        <span class="sr-only">Open menu</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-neutral-300">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <ul class="grid gap-4 text-sm">
+          <li><a class="block px-2 py-2 rounded-lg hover:bg-white/5" href="#home">Home</a></li>
+          <li><a class="block px-2 py-2 rounded-lg hover:bg-white/5" href="#about">About</a></li>
+          <li><a class="block px-2 py-2 rounded-lg hover:bg-white/5" href="#skills">Skills</a></li>
+          <li><a class="block px-2 py-2 rounded-lg hover:bg-white/5" href="#publications">Publications</a></li>
+          <li><a class="block px-2 py-2 rounded-lg hover:bg-white/5" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="relative min-h-[88vh] flex items-center">
+      <div class="absolute inset-0 -z-10">
+        <!-- subtle vignette -->
+        <div class="absolute inset-0 bg-[radial-gradient(1200px_300px_at_80%_0%,rgba(249,115,22,0.25),transparent)]">
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 w-full">
+        <div class="frame bg-panel/40 p-6 md:p-10">
+          <div class="grid md:grid-cols-2 gap-10 items-center">
+            <!-- Left: Intro -->
+            <div class="relative">
+              <!-- Social rail -->
+              <div class="hidden sm:flex flex-col items-center gap-5 absolute -left-12 top-2">
+                <a aria-label="Instagram" class="hover:text-white" href="https://www.instagram.com/hashlahiri/"><svg
+                    width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" />
+                    <circle cx="12" cy="12" r="4.5" stroke="currentColor" />
+                    <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+                  </svg></a>
+                <!-- <a aria-label="Twitter" class="hover:text-white" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 5.8c-.7.3-1.4.5-2.1.6.8-.5 1.3-1.2 1.6-2.1-.7.4-1.6.8-2.5 1-1.4-1.5-3.9-1.4-5.2.2-1 .9-1.4 2.3-1 3.6-3.2-.2-6-1.7-7.9-4.1-1 1.9-.5 4.3 1.2 5.6-.6 0-1.2-.2-1.7-.5 0 2.1 1.4 4 3.4 4.5-.6.2-1.2.2-1.8.1.5 1.7 2.1 3 4 3.1-1.6 1.2-3.6 1.8-5.6 1.8H2.5c2 1.3 4.3 2 6.6 2 8 0 12.4-6.7 12.4-12.4v-.6c.8-.6 1.4-1.3 2-2.1z" fill="currentColor"/></svg></a>
+                <a aria-label="Facebook" class="hover:text-white" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13.5 22v-8h2.6l.4-3h-3v-1.9c0-.9.3-1.5 1.6-1.5H17V5.1C16.3 5 15.5 5 14.7 5 12.4 5 10.8 6.4 10.8 9v2H8v3h2.8v8h2.7z" fill="currentColor"/></svg></a>
+                <a aria-label="YouTube" class="hover:text-white" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M23 8.1s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.2-.9C17.8 4.6 12 4.6 12 4.6h0s-5.8 0-8 .3c-.5.1-1.4.1-2.2.9C1.2 6.5 1 8.1 1 8.1S.8 9.9.8 11.7v1.6c0 1.8.2 3.6.2 3.6s.2 1.6.8 2.3c.8.8 1.9.8 2.4.9 1.7.2 7.8.3 7.8.3s5.8 0 8-.3c.5-.1 1.4-.1 2.2-.9.6-.7.8-2.3.8-2.3s.2-1.8.2-3.6v-1.6c0-1.8-.2-3.6-.2-3.6zM9.8 14.8V8.6l6.1 3.1-6.1 3.1z" fill="currentColor"/></svg></a> -->
+              </div>
+
+              <p class="text-sm text-neutral-400 tracking-widest uppercase">— Hello</p>
+              <h1 class="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.1]">
+                I’m <span class="text-white">Chanakya Lahiri</span>
+              </h1>
+              <p class="mt-4 text-neutral-400 max-w-xl">4+ years of experience in developing secure, compliant, and cloud-ready enterprise applications using Java, Go and JS. Focused on
+data protection and privacy-driven architecture. Open to relocation.</p>
+              <div class="mt-8 flex gap-3">
+                <a href="#about"
+                  class="inline-flex items-center gap-2 rounded-xl bg-orange-500 px-4 py-2.5 font-semibold text-neutral-900 hover:bg-orange-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50">Learn
+                  more
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="#publications"
+                  class="inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2.5 font-semibold hover:border-white/30">View Research</a>
+              </div>
+
+              <div class="mt-8 hidden sm:block">
+                <div class="flex items-center gap-3 text-xs text-neutral-500">
+                  <span class="vertical-rl">on your right!</span>
+                  <span class="h-0.5 w-16 bg-neutral-700"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: (image) -->
+            <div class="relative">
+              <div
+                class="absolute -top-6 -right-4 w-16 h-16 rotate-12 rounded-xl bg-orange-500/90 blur-[1px] shadow-2xl">
+              </div>
+              <div
+                class="absolute -bottom-8 -left-6 w-12 h-12 -rotate-12 rounded-xl bg-orange-600/70 blur-[1px] shadow-2xl">
+              </div>
+
+              <div
+                class="mx-auto aspect-square w-80 sm:w-96 relative overflow-hidden shadow-glow blob [border-radius:36%_64%_60%_40%/42%_38%_62%_58%]">
+                <img src="./assets/mew.png" alt="Hero image" class="absolute inset-0 h-full w-full object-cover" />
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-br from-fuchsia-500/20 via-pink-500/10 to-indigo-600/20 mix-blend-overlay">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="relative py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-3 gap-10 items-start">
+          <div class="lg:col-span-1">
+            <div class="overflow-hidden rounded-[22px] shadow-glow border border-white/5">
+              <img class="w-full h-80 object-cover" alt="Portrait" src="./assets/mew-three.jpg" />
+            </div>
+          </div>
+          <div class="lg:col-span-2">
+            <h2 class="text-3xl md:text-4xl font-extrabold">About me</h2>
+            <p class="mt-4 text-neutral-300 text-lg leading-relaxed">I design &amp; develop resilient backends and
+              delightful UIs. My playground includes <span class="text-orange-400">Java/Spring Boot</span>, <span
+                class="text-orange-400">Angular/TypeScript</span>, <span class="text-orange-400">Node.js</span>, and
+              <span class="text-orange-400">Go</span>. I care about clean architecture, measurable impact, and
+              thoughtful UX.
+            </p>
+            <p class="mt-4 text-neutral-400">Outside code, I enjoy chess, football and travelling across Europe. </p>
+          </div>
+        </div>
+
+        <!-- Featured Works -->
+        <div class="mt-14">
+          <h3 class="text-xl font-semibold tracking-tight">Featured Works</h3>
+          <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card -->
+            <article
+              class="group rounded-2xl bg-panel/60 border border-white/5 hover:border-orange-500/40 transition-colors p-5 shadow-glow">
+              <div class="text-sm text-neutral-400">Go Authentication Starter Pack with encoded encryption</div>
+              <h4 class="mt-2 text-lg font-bold">Go Private</h4>
+              <a href="https://github.com/hashlahiri/Go-Auth-Starter"
+                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-orange-400 group-hover:text-orange-300" target="_blank">Github
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </article>
+            <article
+              class="group rounded-2xl bg-panel/60 border border-white/5 hover:border-orange-500/40 transition-colors p-5 shadow-glow">
+              <div class="text-sm text-neutral-400">A personal Dashboard - everyday needs</div>
+              <h4 class="mt-2 text-lg font-bold">Handy Dashboard</h4>
+              <a href="https://github.com/hashlahiri/Personal-Project-Dashboard"
+                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-orange-400 group-hover:text-orange-300" target="_blank">Github
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </article>
+            <article
+              class="group rounded-2xl bg-panel/60 border border-white/5 hover:border-orange-500/40 transition-colors p-5 shadow-glow">
+              <div class="text-sm text-neutral-400">A Quick UI demo from me</div>
+              <h4 class="mt-2 text-lg font-bold">Hi Me!</h4>
+              <a href="https://github.com/hashlahiri/Hi-its-me"
+                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-orange-400 group-hover:text-orange-300" target="_blank">Github
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold">My Skills</h2>
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <!-- Simple skill tiles; swap with icons/devicon if you prefer -->
+          <!-- <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">HTML</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">CSS</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">Sass</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">JavaScript</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">Angular</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">React</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">Java</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">Spring Boot</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">Node.js</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">Go</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">MongoDB</div>
+          <div class="rounded-2xl bg-panel/70 border border-white/5 p-6 text-center font-semibold">Docker</div> -->
+
+          <!-- LANGUAGES -->
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/html5/html5-original.svg" alt="HTML"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(250,204,21,0.6)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">HTML</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(200px_120px_at_50%_0%,rgba(250,204,21,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/typescript/typescript-original.svg" alt="TypeScript"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">TypeScript</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(59,130,246,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/java/java-original.svg" alt="Java"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(248,113,113,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Java</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(200px_120px_at_50%_0%,rgba(248,113,113,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/python/python-original.svg" alt="Python"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(250,204,21,0.55)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Python</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(200px_120px_at_50%_0%,rgba(250,204,21,0.20),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/go/go-original.svg" alt="Go"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.55)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Go</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(200px_120px_at_50%_0%,rgba(59,130,246,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/angular/angular-original.svg" alt="Angular"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(244,63,94,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Angular</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(200px_120px_at_50%_0%,rgba(244,63,94,0.22),transparent)]"></span>
+          </div>
+
+          <!-- FRAMEWORKS / PLATFORMS -->
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/spring/spring-original.svg" alt="SpringBoot"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(34,197,94,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">SpringBoot</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(34,197,94,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/nodejs/nodejs-original.svg" alt="Node.js"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(34,197,94,0.55)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Node.js</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(34,197,94,0.18),transparent)]"></span>
+          </div>
+
+          <!-- DATABASES -->
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/mongodb/mongodb-original.svg" alt="MongoDB"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(16,185,129,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">MongoDB</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(16,185,129,0.20),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/postgresql/postgresql-original.svg" alt="PostgreSQL"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">PostgreSQL</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(59,130,246,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/redis/redis-original.svg" alt="Redis"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(239,68,68,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Redis</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(239,68,68,0.22),transparent)]"></span>
+          </div>
+
+          <!-- CLOUD / DEVOPS -->
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(253,186,116,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">AWS</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(253,186,116,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/docker/docker-original.svg" alt="Docker"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Docker</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(59,130,246,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/kubernetes/kubernetes-plain.svg" alt="Kubernetes"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.65)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Kubernetes</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(59,130,246,0.24),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/git/git-original.svg" alt="Git" class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300
+           group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150
+           group-hover:drop-shadow-[0_0_22px_rgba(240,83,35,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Git</span>
+            <span aria-hidden class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300
+           bg-[radial-gradient(200px_120px_at_50%_0%,rgba(240,83,35,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/p5js/p5js-original.svg" alt="p5.js" class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300
+           group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150
+           group-hover:drop-shadow-[0_0_22px_rgba(237,34,93,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">p5.js</span>
+            <span aria-hidden class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300
+           bg-[radial-gradient(200px_120px_at_50%_0%,rgba(237,34,93,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/postman/postman-original.svg" alt="Postman" class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300
+           group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150
+           group-hover:drop-shadow-[0_0_22px_rgba(255,108,55,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Postman</span>
+            <span aria-hidden class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300
+           bg-[radial-gradient(200px_120px_at_50%_0%,rgba(255,108,55,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img src="./assets/skills/jetbrains/jetbrains-original.svg" alt="JetBrains" class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300
+           group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150
+           group-hover:drop-shadow-[0_0_22px_rgba(255,255,255,0.65)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">JetBrains</span>
+            <span aria-hidden class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300
+           bg-[radial-gradient(200px_120px_at_50%_0%,rgba(255,255,255,0.12),transparent)]"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PUBLICATIONS ===== -->
+    <section id="publications" class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-2">
+            <h2 class="text-3xl md:text-4xl font-extrabold">Publications</h2>
+            <div class="mt-6 grid sm:grid-cols-2 gap-6">
+              <!-- Publication Cards -->
+              <article class="rounded-2xl overflow-hidden border border-white/5 bg-panel/70 shadow-glow">
+                <img class="h-44 w-full object-cover"
+                  src="./assets/publications/pub1.jpg"
+                  alt="Code" />
+                <div class="p-5">
+                  <h3 class="font-semibold">Fostering Human resilience</h3>
+                  <p class="mt-2 text-sm text-neutral-400 pb-2">Published research paper titled "Importance of Edge Computing in IT".</p>
+                  <a href="https://www.viirj.org/specialissues/2021/SP2108/Part%201.pdf" target="_blank">View</a>
+                </div>
+              </article>
+              <article class="rounded-2xl overflow-hidden border border-white/5 bg-panel/70 shadow-glow">
+                <img class="h-44 w-full object-cover"
+                  src="./assets/publications/pub2.jpg"
+                  alt="Design preview" />
+                <div class="p-5">
+                  <h3 class="font-semibold">Advancements in Artificial Intelligence, Blockchain Technology and IoT</h3>
+                  <p class="mt-2 text-sm text-neutral-400">Featured Contributor in the globally released book "Advancements in Artificial Intelligence, Blockchain Technology, and IoT in Higher Education."</p>
+                  <a href="https://www.appleacademicpress.com/advancements-in-artificial-intelligence-blockchain-technology-and-iot-in-higher-education-mitigating-the-impact-of-covid-19/9781774910924" target="_blank">View</a>
+                </div>
+              </article>
+              <article class="rounded-2xl overflow-hidden border border-white/5 bg-panel/70 shadow-glow sm:col-span-2">
+                <img class="h-56 w-full object-cover"
+                  src="./assets/publications/pub3.jpg"
+                  alt="Lens" />
+                <div class="p-5">
+                  <h3 class="font-semibold">Cryptocurrencies as Financial Assets A CrossSection</h3>
+                  <p class="mt-2 text-sm text-neutral-400">This book chapter explores the intersection of cryptography and the digital economy. It delves into the role of blockchain technology in reshaping finance, security, and cloud computing. We examine the impact of cryptocurrencies and the digital stock market, as well as the challenges and opportunities presented by this evolving landscape.
+                  </p>
+                  <a href="https://www.eurekaselect.com/chapter/23344" target="_blank">View</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <aside id="contact" class="lg:col-span-1">
+            <div class="rounded-[22px] border border-white/5 bg-panel/70 p-6 shadow-glow">
+              <h3 class="text-xl font-bold">Send a Hi!</h3>
+              <p class="mt-2 text-sm text-neutral-400">Have a project in mind? I’m available for collaboration / hire. Reach out and I’ll get back within 24–48h.</p>
+
+              <dl class="mt-4 text-sm">
+                <div class="flex items-center gap-3"><span class="text-neutral-400 w-14">Email</span> <a
+                    class="hover:text-white" href="mailto:helloclahiri@gmail.com">hello*****@gmail.com</a></div>
+                <div class="flex items-center gap-3 mt-2"><span class="text-neutral-400 w-14">Phone</span> <a
+                    class="hover:text-white" href="tel:+911234567890">+91 12345 67890</a></div>
+                <div class="flex items-center gap-3 mt-2"><span class="text-neutral-400 w-14">Base</span> <span>Pune,
+                    India</span></div>
+              </dl>
+
+              <form class="mt-6 grid gap-3" action="https://formspree.io/f/your-id" method="POST">
+                <input
+                  class="rounded-xl bg-neutral-900/60 border border-white/10 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                  name="name" placeholder="Your Name" required />
+                <input
+                  class="rounded-xl bg-neutral-900/60 border border-white/10 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                  type="email" name="email" placeholder="Your Email" required />
+                <input
+                  class="rounded-xl bg-neutral-900/60 border border-white/10 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                  name="phone" placeholder="Your Phone Number" />
+                <textarea
+                  class="rounded-xl bg-neutral-900/60 border border-white/10 px-4 py-2.5 min-h-[120px] focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                  name="message" placeholder="Tell me about your project..." required></textarea>
+                <button
+                  class="mt-1 inline-flex justify-center items-center gap-2 rounded-xl bg-orange-500 px-4 py-2.5 font-semibold text-neutral-900 hover:bg-orange-400"
+                  type="submit">Send Message</button>
+                <p class="text-[11px] text-neutral-500">If you have any queries, get in touch with me even on social media platforms. I could share you further details from there.</p>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-neutral-500">© <span id="year"></span> Chanakya Lahiri. All rights reserved.</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a class="hover:text-white" href="https://github.com/hashlahiri" target="_blank">GitHub</a>
+        <a class="hover:text-white" href="https://www.linkedin.com/in/chanakyalahiri/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu toggle
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.toggle('hidden');
+    });
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
