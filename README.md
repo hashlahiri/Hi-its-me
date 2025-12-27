@@ -1,5 +1,5 @@
 # Hi-its-me
-Hi there, <a href="https://fastidious-crisp-18187c.netlify.app/" target="_blank">Welcome</a> &lt;3
+Hi there, <a href="https://chanakyalahiri.netlify.app//" target="_blank">Welcome</a> &lt;3
 
 Powered by Tailwind (CDN, no heavy build step).  
 Dark UI, soft orange glows, smooth scrolling, animated effects, skills/tooling rows, Formspree contact, and minified custom assets.
