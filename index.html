@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Chanakya Lahiri — fullstack engineer with experience across Java, Go, JavaScript, Spring Boot, Angular/TypeScript, and cloud-native tooling." />
   <title>Hi its Chanakya</title>
 
   <!-- Tailwind CDN -->
@@ -15,21 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-
-  <!-- Helper class for the dropshadow background in the front display box -->
-  <style>
-    /* Orange frame with subtle glow */
-    .frame {
-      position: relative;
-      border-radius: 28px;
-      background: radial-gradient(900px 220px at 100% 0, rgba(249, 115, 22, .35), transparent 60%) border-box;
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, .06) inset, 0 20px 60px -20px rgba(249, 115, 22, .35);
-    }
-
-    .vertical-rl {
-      writing-mode: vertical-rl;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body class="bg-neutral-950 text-neutral-200 font-sans antialiased selection:bg-orange-500 selection:text-black">
@@ -85,12 +72,45 @@
             <div class="relative">
               <!-- Social rail -->
               <div class="hidden sm:flex flex-col items-center gap-5 absolute -left-12 top-2">
-                <a aria-label="Instagram" class="hover:text-white" href="https://www.instagram.com/hashlahiri/"><svg
-                    width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <a aria-label="Instagram" class="hover:text-white" href="https://www.instagram.com/hashlahiri/"
+                  target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                     <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" />
                     <circle cx="12" cy="12" r="4.5" stroke="currentColor" />
                     <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
                   </svg></a>
+                <a aria-label="GitHub" class="hover:text-white" href="https://github.com/hashlahiri" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.13-1.1-1.43-1.1-1.43-.9-.61.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.64.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.02-2.68-.1-.25-.44-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.84c.85.01 1.7.11 2.5.32 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.21 2.4.1 2.65.63.7 1.02 1.59 1.02 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.67.92.67 1.86 0 1.34-.01 2.42-.01 2.75 0 .26.18.58.69.48A10 10 0 0 0 12 2Z"
+                      fill="currentColor" />
+                  </svg>
+                </a>
+                <a aria-label="LinkedIn" class="hover:text-white" href="https://www.linkedin.com/in/chanakyalahiri/"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path fill="currentColor"
+                      d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5ZM3 9h4v12H3V9Zm7.5 0h3.83v1.64h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.07V21h-4v-5.26c0-1.25-.02-2.86-1.75-2.86-1.75 0-2.02 1.37-2.02 2.77V21h-4V9Z" />
+                  </svg>
+                </a>
+                <a aria-label="HackerRank" class="hover:text-white" href="https://www.hackerrank.com/hashlahiri"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path fill="currentColor"
+                      d="M11.47 1.24a1.5 1.5 0 0 1 1.06 0l7.73 3a1.5 1.5 0 0 1 .94 1.39v12.74a1.5 1.5 0 0 1-.94 1.39l-7.73 3a1.5 1.5 0 0 1-1.06 0l-7.73-3a1.5 1.5 0 0 1-.94-1.39V5.63a1.5 1.5 0 0 1 .94-1.39l7.73-3Zm.53 4.17-3.5 3.5 3.5 3.5 3.5-3.5-3.5-3.5Zm-4.7 2.16L9.86 12l-2.56 4.43h1.86L12 13.2l2.84 3.23h1.86L14.14 12l2.56-4.43h-1.86L12 10.8l-2.84-3.23h-1.86Z" />
+                  </svg>
+                </a>
+                <a aria-label="LeetCode" class="hover:text-white" href="https://leetcode.com/hashlahiri"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path fill="currentColor"
+                      d="M15.5 4.2c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L7.4 9.5a3 3 0 0 0 0 4.2l6.7 6.7c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-6.7-6.7a1 1 0 0 1 0-1.4l6.7-6.7Z" />
+                    <path fill="currentColor"
+                      d="M18.6 8.7a1 1 0 0 0 0-1.4l-4-4a1 1 0 1 0-1.4 1.4l3.3 3.3-3.3 3.3a1 1 0 0 0 1.4 1.4l4-4Z" />
+                    <path fill="currentColor"
+                      d="M19 14h-6a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2Z" />
+                  </svg>
+                </a>
                 <!-- <a aria-label="Twitter" class="hover:text-white" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 5.8c-.7.3-1.4.5-2.1.6.8-.5 1.3-1.2 1.6-2.1-.7.4-1.6.8-2.5 1-1.4-1.5-3.9-1.4-5.2.2-1 .9-1.4 2.3-1 3.6-3.2-.2-6-1.7-7.9-4.1-1 1.9-.5 4.3 1.2 5.6-.6 0-1.2-.2-1.7-.5 0 2.1 1.4 4 3.4 4.5-.6.2-1.2.2-1.8.1.5 1.7 2.1 3 4 3.1-1.6 1.2-3.6 1.8-5.6 1.8H2.5c2 1.3 4.3 2 6.6 2 8 0 12.4-6.7 12.4-12.4v-.6c.8-.6 1.4-1.3 2-2.1z" fill="currentColor"/></svg></a>
                 <a aria-label="Facebook" class="hover:text-white" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13.5 22v-8h2.6l.4-3h-3v-1.9c0-.9.3-1.5 1.6-1.5H17V5.1C16.3 5 15.5 5 14.7 5 12.4 5 10.8 6.4 10.8 9v2H8v3h2.8v8h2.7z" fill="currentColor"/></svg></a>
                 <a aria-label="YouTube" class="hover:text-white" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M23 8.1s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.2-.9C17.8 4.6 12 4.6 12 4.6h0s-5.8 0-8 .3c-.5.1-1.4.1-2.2.9C1.2 6.5 1 8.1 1 8.1S.8 9.9.8 11.7v1.6c0 1.8.2 3.6.2 3.6s.2 1.6.8 2.3c.8.8 1.9.8 2.4.9 1.7.2 7.8.3 7.8.3s5.8 0 8-.3c.5-.1 1.4-.1 2.2-.9.6-.7.8-2.3.8-2.3s.2-1.8.2-3.6v-1.6c0-1.8-.2-3.6-.2-3.6zM9.8 14.8V8.6l6.1 3.1-6.1 3.1z" fill="currentColor"/></svg></a> -->
@@ -151,7 +171,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
         <div class="grid lg:grid-cols-3 gap-10 items-start">
           <div class="lg:col-span-1">
             <div class="overflow-hidden rounded-[22px] shadow-glow border border-white/5">
-              <img class="w-full h-80 object-cover" alt="Portrait" src="./assets/mew-three.jpg" />
+              <img class="w-full h-80 object-cover" alt="Portrait" src="./assets/mew-three.jpg" loading="lazy" />
             </div>
           </div>
           <div class="lg:col-span-2">
@@ -163,6 +183,17 @@ data protection and privacy-driven architecture. Open to relocation.</p>
               thoughtful UX.
             </p>
             <p class="mt-4 text-neutral-400">Outside code, I enjoy chess, football and travelling across Europe. </p>
+            <div class="mt-3 flex items-center gap-3 text-sm text-neutral-300">
+              <span class="text-neutral-400">Chess:</span>
+              <a class="inline-flex items-center gap-2 rounded-lg border border-white/5 bg-neutral-900/50 px-3 py-1.5 hover:border-orange-400/60 hover:text-white"
+                href="https://www.chess.com/member/harrychess9" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path fill="currentColor"
+                    d="M10.5 3.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v1.08l1.58 1.57a1.5 1.5 0 0 1 .42 1.04V9h.5a1 1 0 1 1 0 2h-.73l-.44 2.2a1.5 1.5 0 0 1-1.47 1.2H11l-1 2h6a1 1 0 1 1 0 2H8a1 1 0 0 1-.9-1.45l1.7-3.4H8.5a1.5 1.5 0 0 1-1.47-1.2L6.6 11H5.5a1 1 0 1 1 0-2h.5V7.19a1.5 1.5 0 0 1 .44-1.06L8 4.58V3.5a1.5 1.5 0 0 1 3 0v.07l-.5.5V3.5Z" />
+                </svg>
+                <span>chess.com/want-to-play?</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -185,9 +216,9 @@ data protection and privacy-driven architecture. Open to relocation.</p>
             </article>
             <article
               class="group rounded-2xl bg-panel/60 border border-white/5 hover:border-orange-500/40 transition-colors p-5 shadow-glow">
-              <div class="text-sm text-neutral-400">A personal Dashboard - everyday needs</div>
-              <h4 class="mt-2 text-lg font-bold">Handy Dashboard</h4>
-              <a href="https://github.com/hashlahiri/Personal-Project-Dashboard"
+              <div class="text-sm text-neutral-400">Spring Boot 2.5.4 + MongoDB dashboard with OpenWeatherMap integrations and smooth error handling.</div>
+              <h4 class="mt-2 text-lg font-bold">Personal Dashboard</h4>
+              <a href="https://github.com/hashlahiri/PersonalDashboard"
                 class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-orange-400 group-hover:text-orange-300" target="_blank">Github
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   <path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -197,9 +228,21 @@ data protection and privacy-driven architecture. Open to relocation.</p>
             </article>
             <article
               class="group rounded-2xl bg-panel/60 border border-white/5 hover:border-orange-500/40 transition-colors p-5 shadow-glow">
-              <div class="text-sm text-neutral-400">A Quick UI demo from me</div>
-              <h4 class="mt-2 text-lg font-bold">Hi Me!</h4>
-              <a href="https://github.com/hashlahiri/Hi-its-me"
+              <div class="text-sm text-neutral-400">Route safety guide (Spring Boot 4, MongoDB, Next.js, Tailwind) comparing shortest vs safer paths.</div>
+              <h4 class="mt-2 text-lg font-bold">Walk Safe AI</h4>
+              <a href="https://github.com/hashlahiri/walk-safe-ai"
+                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-orange-400 group-hover:text-orange-300" target="_blank">Github
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </article>
+            <article
+              class="group rounded-2xl bg-panel/60 border border-white/5 hover:border-orange-500/40 transition-colors p-5 shadow-glow">
+              <div class="text-sm text-neutral-400">Spring Boot backend with Next.js + Tailwind UI comparing multi-model AI chat responses side-by-side.</div>
+              <h4 class="mt-2 text-lg font-bold">Multi-AI-Query</h4>
+              <a href="https://github.com/hashlahiri/Multi-AI-Query"
                 class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-orange-400 group-hover:text-orange-300" target="_blank">Github
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   <path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -234,7 +277,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           <!-- LANGUAGES -->
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/html5/html5-original.svg" alt="HTML"
+            <img loading="lazy" src="./assets/skills/html5/html5-original.svg" alt="HTML"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(250,204,21,0.6)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">HTML</span>
             <span aria-hidden
@@ -242,7 +285,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/typescript/typescript-original.svg" alt="TypeScript"
+            <img loading="lazy" src="./assets/skills/typescript/typescript-original.svg" alt="TypeScript"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">TypeScript</span>
             <span aria-hidden
@@ -250,7 +293,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/java/java-original.svg" alt="Java"
+            <img loading="lazy" src="./assets/skills/java/java-original.svg" alt="Java"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(248,113,113,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Java</span>
             <span aria-hidden
@@ -258,7 +301,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/python/python-original.svg" alt="Python"
+            <img loading="lazy" src="./assets/skills/python/python-original.svg" alt="Python"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(250,204,21,0.55)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Python</span>
             <span aria-hidden
@@ -266,7 +309,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/go/go-original.svg" alt="Go"
+            <img loading="lazy" src="./assets/skills/go/go-original.svg" alt="Go"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.55)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Go</span>
             <span aria-hidden
@@ -274,7 +317,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/angular/angular-original.svg" alt="Angular"
+            <img loading="lazy" src="./assets/skills/angular/angular-original.svg" alt="Angular"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(244,63,94,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Angular</span>
             <span aria-hidden
@@ -284,7 +327,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           <!-- FRAMEWORKS / PLATFORMS -->
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/spring/spring-original.svg" alt="SpringBoot"
+            <img loading="lazy" src="./assets/skills/spring/spring-original.svg" alt="SpringBoot"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(34,197,94,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">SpringBoot</span>
             <span aria-hidden
@@ -292,7 +335,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/nodejs/nodejs-original.svg" alt="Node.js"
+            <img loading="lazy" src="./assets/skills/nodejs/nodejs-original.svg" alt="Node.js"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(34,197,94,0.55)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Node.js</span>
             <span aria-hidden
@@ -302,7 +345,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           <!-- DATABASES -->
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/mongodb/mongodb-original.svg" alt="MongoDB"
+            <img loading="lazy" src="./assets/skills/mongodb/mongodb-original.svg" alt="MongoDB"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(16,185,129,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">MongoDB</span>
             <span aria-hidden
@@ -310,7 +353,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/postgresql/postgresql-original.svg" alt="PostgreSQL"
+            <img loading="lazy" src="./assets/skills/postgresql/postgresql-original.svg" alt="PostgreSQL"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">PostgreSQL</span>
             <span aria-hidden
@@ -318,7 +361,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/redis/redis-original.svg" alt="Redis"
+            <img loading="lazy" src="./assets/skills/redis/redis-original.svg" alt="Redis"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(239,68,68,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Redis</span>
             <span aria-hidden
@@ -328,7 +371,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           <!-- CLOUD / DEVOPS -->
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"
+            <img loading="lazy" src="./assets/skills/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(253,186,116,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">AWS</span>
             <span aria-hidden
@@ -336,7 +379,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/docker/docker-original.svg" alt="Docker"
+            <img loading="lazy" src="./assets/skills/docker/docker-original.svg" alt="Docker"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Docker</span>
             <span aria-hidden
@@ -344,7 +387,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/kubernetes/kubernetes-plain.svg" alt="Kubernetes"
+            <img loading="lazy" src="./assets/skills/kubernetes/kubernetes-plain.svg" alt="Kubernetes"
               class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(59,130,246,0.65)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Kubernetes</span>
             <span aria-hidden
@@ -352,39 +395,97 @@ data protection and privacy-driven architecture. Open to relocation.</p>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/git/git-original.svg" alt="Git" class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300
-           group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150
-           group-hover:drop-shadow-[0_0_22px_rgba(240,83,35,0.60)]" />
-            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Git</span>
-            <span aria-hidden class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300
-           bg-[radial-gradient(200px_120px_at_50%_0%,rgba(240,83,35,0.22),transparent)]"></span>
+            <img loading="lazy" src="./assets/skills/terraform/terraform-original.svg" alt="Terraform"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(129,140,248,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Terraform</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(129,140,248,0.22),transparent)]"></span>
           </div>
           <div
             class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/p5js/p5js-original.svg" alt="p5.js" class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300
-           group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150
-           group-hover:drop-shadow-[0_0_22px_rgba(237,34,93,0.60)]" />
+            <img loading="lazy" src="./assets/skills/jenkins/jenkins-original.svg" alt="Jenkins"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(248,113,113,0.55)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Jenkins</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(248,113,113,0.20),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img loading="lazy" src="./assets/skills/apachekafka/apachekafka-original.svg" alt="Kafka"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(249,115,22,0.60)]" />
+            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Kafka</span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(220px_140px_at_50%_0%,rgba(249,115,22,0.22),transparent)]"></span>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
+            <img loading="lazy" src="./assets/skills/p5js/p5js-original.svg" alt="p5.js"
+              class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-[0_0_22px_rgba(237,34,93,0.60)]" />
             <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">p5.js</span>
-            <span aria-hidden class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300
-           bg-[radial-gradient(200px_120px_at_50%_0%,rgba(237,34,93,0.22),transparent)]"></span>
+            <span aria-hidden
+              class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(200px_120px_at_50%_0%,rgba(237,34,93,0.22),transparent)]"></span>
           </div>
-          <div
-            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/postman/postman-original.svg" alt="Postman" class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300
-           group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150
-           group-hover:drop-shadow-[0_0_22px_rgba(255,108,55,0.60)]" />
-            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">Postman</span>
-            <span aria-hidden class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300
-           bg-[radial-gradient(200px_120px_at_50%_0%,rgba(255,108,55,0.22),transparent)]"></span>
+        </div>
+        <div class="mt-8 rounded-2xl border border-white/5 bg-panel/60 px-4 py-3 shadow-glow">
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="text-sm font-semibold text-neutral-200">Tooling</span>
+            <div class="flex flex-wrap items-center gap-3">
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <img loading="lazy" src="./assets/skills/git/git-original.svg" alt="Git" class="h-6 w-6" />
+                <span class="text-xs text-neutral-300">Git</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <img loading="lazy" src="./assets/skills/maven/maven-original.svg" alt="Maven" class="h-6 w-6" />
+                <span class="text-xs text-neutral-300">Maven</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <img loading="lazy" src="./assets/skills/gradle/gradle-original.svg" alt="Gradle" class="h-6 w-6" />
+                <span class="text-xs text-neutral-300">Gradle</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <img loading="lazy" src="./assets/skills/sonarqube/sonarqube-original.svg" alt="SonarQube" class="h-6 w-6" />
+                <span class="text-xs text-neutral-300">SonarQube</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <img loading="lazy" src="./assets/skills/jira/jira-original.svg" alt="Jira" class="h-6 w-6" />
+                <span class="text-xs text-neutral-300">Jira</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <img loading="lazy" src="./assets/skills/intellij/intellij-original.svg" alt="IntelliJ" class="h-6 w-6" />
+                <span class="text-xs text-neutral-300">IntelliJ</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <img loading="lazy" src="./assets/skills/vscode/vscode-original.svg" alt="VS Code" class="h-6 w-6" />
+                <span class="text-xs text-neutral-300">VS Code</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <img loading="lazy" src="./assets/skills/postman/postman-original.svg" alt="Postman" class="h-6 w-6" />
+                <span class="text-xs text-neutral-300">Postman</span>
+              </div>
+            </div>
           </div>
-          <div
-            class="group relative overflow-hidden rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-glowSoft">
-            <img src="./assets/skills/jetbrains/jetbrains-original.svg" alt="JetBrains" class="h-10 w-10 filter grayscale contrast-75 brightness-90 opacity-70 transition duration-300
-           group-hover:grayscale-0 group-hover:opacity-100 group-hover:saturate-150
-           group-hover:drop-shadow-[0_0_22px_rgba(255,255,255,0.65)]" />
-            <span class="text-sm font-semibold text-neutral-400 transition group-hover:text-white">JetBrains</span>
-            <span aria-hidden class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300
-           bg-[radial-gradient(200px_120px_at_50%_0%,rgba(255,255,255,0.12),transparent)]"></span>
+        </div>
+        <div class="mt-4 rounded-2xl border border-white/5 bg-panel/60 px-4 py-3 shadow-glow">
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="text-sm font-semibold text-neutral-200">AI tooling</span>
+            <div class="flex flex-wrap items-center gap-3">
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-sky-400 text-[10px] font-bold text-black">CP</span>
+                <span class="text-xs text-neutral-300">Copilot</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-fuchsia-500 to-orange-400 text-[10px] font-bold text-black">GPT</span>
+                <span class="text-xs text-neutral-300">ChatGPT</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-rose-400 text-[10px] font-bold text-black">CL</span>
+                <span class="text-xs text-neutral-300">Claude</span>
+              </div>
+              <div class="flex items-center gap-2 rounded-xl border border-white/5 bg-neutral-900/40 px-3 py-2">
+                <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-amber-300 to-cyan-400 text-[10px] font-bold text-black">GM</span>
+                <span class="text-xs text-neutral-300">Gemini</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -401,7 +502,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
               <article class="rounded-2xl overflow-hidden border border-white/5 bg-panel/70 shadow-glow">
                 <img class="h-44 w-full object-cover"
                   src="./assets/publications/pub1.jpg"
-                  alt="Code" />
+                  alt="Code" loading="lazy" />
                 <div class="p-5">
                   <h3 class="font-semibold">Fostering Human resilience</h3>
                   <p class="mt-2 text-sm text-neutral-400 pb-2">Published research paper titled "Importance of Edge Computing in IT".</p>
@@ -411,7 +512,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
               <article class="rounded-2xl overflow-hidden border border-white/5 bg-panel/70 shadow-glow">
                 <img class="h-44 w-full object-cover"
                   src="./assets/publications/pub2.jpg"
-                  alt="Design preview" />
+                  alt="Design preview" loading="lazy" />
                 <div class="p-5">
                   <h3 class="font-semibold">Advancements in Artificial Intelligence, Blockchain Technology and IoT</h3>
                   <p class="mt-2 text-sm text-neutral-400">Featured Contributor in the globally released book "Advancements in Artificial Intelligence, Blockchain Technology, and IoT in Higher Education."</p>
@@ -421,7 +522,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
               <article class="rounded-2xl overflow-hidden border border-white/5 bg-panel/70 shadow-glow sm:col-span-2">
                 <img class="h-56 w-full object-cover"
                   src="./assets/publications/pub3.jpg"
-                  alt="Lens" />
+                  alt="Lens" loading="lazy" />
                 <div class="p-5">
                   <h3 class="font-semibold">Cryptocurrencies as Financial Assets A CrossSection</h3>
                   <p class="mt-2 text-sm text-neutral-400">This book chapter explores the intersection of cryptography and the digital economy. It delves into the role of blockchain technology in reshaping finance, security, and cloud computing. We examine the impact of cryptocurrencies and the digital stock market, as well as the challenges and opportunities presented by this evolving landscape.
@@ -442,27 +543,30 @@ data protection and privacy-driven architecture. Open to relocation.</p>
                 <div class="flex items-center gap-3"><span class="text-neutral-400 w-14">Email</span> <a
                     class="hover:text-white" href="mailto:helloclahiri@gmail.com">hello*****@gmail.com</a></div>
                 <div class="flex items-center gap-3 mt-2"><span class="text-neutral-400 w-14">Phone</span> <a
-                    class="hover:text-white" href="tel:+911234567890">+91 12345 67890</a></div>
+                    class="hover:text-white" href="tel:+91-email-me">+91 1234-email-me-1234</a></div>
                 <div class="flex items-center gap-3 mt-2"><span class="text-neutral-400 w-14">Base</span> <span>Pune,
                     India</span></div>
               </dl>
 
-              <form class="mt-6 grid gap-3" action="https://formspree.io/f/your-id" method="POST">
+              <form id="contactForm" class="mt-6 grid gap-3" action="https://formspree.io/f/mbdjongo" method="POST">
+                <input type="hidden" name="_subject" value="New website contact" />
+                <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
                 <input
                   class="rounded-xl bg-neutral-900/60 border border-white/10 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
-                  name="name" placeholder="Your Name" required />
+                  name="name" aria-label="Your Name" placeholder="Your Name" required />
                 <input
                   class="rounded-xl bg-neutral-900/60 border border-white/10 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
-                  type="email" name="email" placeholder="Your Email" required />
+                  type="email" name="email" aria-label="Your Email" placeholder="Your Email" required />
                 <input
                   class="rounded-xl bg-neutral-900/60 border border-white/10 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
-                  name="phone" placeholder="Your Phone Number" />
+                  name="phone" aria-label="Your Phone Number" placeholder="Your Phone Number" />
                 <textarea
                   class="rounded-xl bg-neutral-900/60 border border-white/10 px-4 py-2.5 min-h-[120px] focus:outline-none focus:ring-2 focus:ring-orange-500/40"
-                  name="message" placeholder="Tell me about your project..." required></textarea>
+                  name="message" aria-label="Your Message" placeholder="Tell me about your project..." required minlength="10"></textarea>
                 <button
                   class="mt-1 inline-flex justify-center items-center gap-2 rounded-xl bg-orange-500 px-4 py-2.5 font-semibold text-neutral-900 hover:bg-orange-400"
                   type="submit">Send Message</button>
+                <p id="contactStatus" class="text-[11px] text-neutral-500" role="status" aria-live="polite"></p>
                 <p class="text-[11px] text-neutral-500">If you have any queries, get in touch with me even on social media platforms. I could share you further details from there.</p>
               </form>
             </div>
@@ -482,14 +586,7 @@ data protection and privacy-driven architecture. Open to relocation.</p>
     </div>
   </footer>
 
-  <script>
-    // mobile menu toggle
-    document.getElementById('menuBtn').addEventListener('click', () => {
-      document.getElementById('mobileNav').classList.toggle('hidden');
-    });
-    // year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

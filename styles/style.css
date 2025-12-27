@@ -1,0 +1,11 @@
+/* Helper classes for custom layout effects */
+.frame {
+  position: relative;
+  border-radius: 28px;
+  background: radial-gradient(900px 220px at 100% 0, rgba(249, 115, 22, 0.35), transparent 60%) border-box;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06) inset, 0 20px 60px -20px rgba(249, 115, 22, 0.35);
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
